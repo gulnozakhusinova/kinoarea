@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./swiper/swiper-bundle.css">
 
   <link rel="stylesheet" type="text/css" href="fonts/style.css" />
   <title>Kinoarea</title>
@@ -207,7 +208,14 @@
     </div>
 
     <div class="trailerVideo container">
-      <video src="#"></video>
+      <video controls class="video">
+        <source src="./video/movie.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+
+
+
       <div class="videoDetails">
         <div class="videoTitle">
           <h3>Форсаж 9</h3>
@@ -237,24 +245,40 @@
     </div>
 
     <div class="trailerBoxes container">
-      <div class="trailerCard">
-        <img src="./img/card1.png" alt="girl">
-        <span>Мулан </span>
-      </div>
 
-      <div class="trailerCard">
-        <img src="./img/card1.png" alt="girl">
-        <span>Мулан </span>
-      </div>
+      <!-- Slider main container -->
+      <div class="swiper2">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="trailerCard">
+              <img src="./img/card1.png" alt="girl">
+              <span>Мулан </span>
+            </div>
+          </div>
 
-      <div class="trailerCard">
-        <img src="./img/card1.png" alt="girl">
-        <span>Мулан </span>
-      </div>
+          <div class="swiper-slide">
+            <div class="trailerCard">
+              <img src="./img/card2.png" alt="girl">
+              <span>Форсаж 9</span>
+            </div>
+          </div>
 
-      <div class="trailerCard">
-        <img src="./img/card1.png" alt="girl">
-        <span>Мулан </span>
+          <div class="swiper-slide">
+            <div class="trailerCard">
+              <img src="./img/card3.png" alt="girl">
+              <span>Чёрная Вдова</span>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="trailerCard">
+              <img src="./img/card4.png" alt="girl">
+              <span>Тихое место 2</span>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -280,51 +304,155 @@
     </div>
 
     <div class="showcase container">
-      <div class="filmContainer">
+      <div class="filmContainer2">
 
-        <div class="filmCard">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="filmCard">
+                <div class="filmCardImg">
+                  <img src="./img/pop1.png" alt="">
+                  <div class="reyting">8.50</div>
+                </div>
+                <div class="filmCardText">
+                  <p>Джокер</p>
+                  <span>Триллер, драма, криминал</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="filmCard">
+                <div class="filmCardImg">
+                  <img src="./img/img2.png" alt="">
+                  <div class="reyting">8.50</div>
+                </div>
+                <div class="filmCardText">
+                  <p>Джокер</p>
+                  <span>Триллер, драма, криминал</span>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="swiper-slide">
+              <div class="filmCard">
+                <div class="filmCardImg">
+                  <img src="./img/img2.png" alt="">
+                  <div class="reyting">8.50</div>
+                </div>
+                <div class="filmCardText">
+                  <p>Джокер</p>
+                  <span>Триллер, драма, криминал</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="filmCard">
+                <div class="filmCardImg">
+                  <img src="./img/img2.png" alt="">
+                  <div class="reyting">8.50</div>
+                </div>
+                <div class="filmCardText">
+                  <p>Джокер</p>
+                  <span>Триллер, драма, криминал</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="filmCard">
+                <div class="filmCardImg">
+                  <img src="./img/img3.png" alt="">
+                  <div class="reyting">8.50</div>
+                </div>
+                <div class="filmCardText">
+                  <p>Джокер</p>
+                  <span>Триллер, драма, криминал</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="filmCard">
+                <div class="filmCardImg">
+                  <img src="./img/img1.png" alt="">
+                  <div class="reyting">8.50</div>
+                </div>
+                <div class="filmCardText">
+                  <p>Джокер</p>
+                  <span>Триллер, драма, криминал</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="filmCard">
+                <div class="filmCardImg">
+                  <img src="./img/pop1.png" alt="">
+                  <div class="reyting">8.50</div>
+                </div>
+                <div class="filmCardText">
+                  <p>Джокер</p>
+                  <span>Триллер, драма, криминал</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+          <!-- If we need pagination
+          <div class="swiper-pagination"></div> -->
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+
+
+
+
+
+        <!-- <div class="filmCard">
           <div class="filmCardImg">
-            <img src="./img/img1.png" alt="">
-            <div class="reyting">6.70</div>
+            <img src="./img/pop1.png" alt="">
+            <div class="reyting">7.80</div>
           </div>
           <div class="filmCardText">
-            <p>Побег из Претории</p>
-            <span>Триллер</span>
+            <p>История игрушек 4</p>
+            <span>Мультфильм, фэнтези, комедия, приключения ...</span>
           </div>
         </div>
 
         <div class="filmCard">
           <div class="filmCardImg">
-            <img src="./img/img2.png" alt="">
-            <div class="reyting">8.50</div>
+            <img src="./img/pop2.png" alt="">
+            <div class="reyting">7.70</div>
           </div>
           <div class="filmCardText">
-            <p>Джокер</p>
-            <span>Триллер, драма, криминал</span>
+            <p>Однажды в… Голливуде</p>
+            <span>Драма, комедия</span>
           </div>
         </div>
 
         <div class="filmCard">
           <div class="filmCardImg">
-            <img src="./img/img3.png" alt="">
-            <div class="reyting">6.70</div>
+            <img src="./img/pop3.png" alt="">
+            <div class="reyting">7.10</div>
           </div>
           <div class="filmCardText">
-            <p>Звёздные войны: Скайуокер. Восход</p>
-            <span>Фантастика, фэнтези, боевик, приключения</span>
+            <p>Солнцестояние</p>
+            <span>Ужасы, триллер, драма</span>
           </div>
-        </div>
-
-        <div class="filmCard">
-          <div class="filmCardImg">
-            <img src="./img/img4.png" alt="">
-            <div class="reyting">8.00</div>
-          </div>
-          <div class="filmCardText">
-            <p>Джентльмены</p>
-            <span>Боевик, комедия, криминал</span>
-          </div>
-        </div>
+        </div> -->
 
       </div>
 
@@ -346,7 +474,7 @@
     </div>
 
     <div class="popularPersonBoxes container">
-      
+
       <div class="popularPersonCard">
         <div class="card1 yellowText">
           1-е место
@@ -379,7 +507,7 @@
             <span class="grayText2">Tinto Brass</span>
             <span class="yellowText2">87 лет</span>
           </div>
-          <div>3-е место</div>
+          <div class="yellowText">3-е место</div>
         </div>
 
         <div class="listCard">
@@ -388,7 +516,7 @@
             <span class="grayText2">Tinto Brass</span>
             <span class="yellowText2">87 лет</span>
           </div>
-          <div>3-е место</div>
+          <div class="yellowText">3-е место</div>
         </div>
 
         <div class="listCard">
@@ -397,7 +525,7 @@
             <span class="grayText2">Tinto Brass</span>
             <span class="yellowText2">87 лет</span>
           </div>
-          <div>3-е место</div>
+          <div class="yellowText">3-е место</div>
         </div>
 
         <div class="listCard">
@@ -406,7 +534,7 @@
             <span class="grayText2">Tinto Brass</span>
             <span class="yellowText2">87 лет</span>
           </div>
-          <div>3-е место</div>
+          <div class="yellowText">3-е место</div>
         </div>
 
       </div>
@@ -415,7 +543,524 @@
 
   </section>
 
+  <section class="lastNewsContainer">
+    <div class="container expectedNews">
+      <div class="trailerTitle">
+        <h2>Последние новости</h2>
+        <div class="trailerText">
+          <span>Все новости</span>
+          <span>==></span>
+        </div>
+      </div>
+
+      <div class="newsBoxContainer">
+
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="newsBox">
+                <div class="newsInfo">
+                  <span class="newsDate">15 Апр 2020</span>
+                  <div class="comment">
+                    <img src="./img/eye.svg" alt="icon message" id="eyeIcon">
+                    <span  class="newsDate">242</span>
+                  </div>
+                  <div class="comment">
+                    <img src="./img/comment.svg" alt="icon message" id="messageIcon">
+                    <span  class="newsDate">14</span>
+                  </div>
+                </div>
+                <img src="./img/new1.png" alt="men">
+                <div class="newsText">
+                  <p class="dateText">Не время умирать. Перенос релиза фильма </p>
+                  <p class="dateText2">Но действия представителей оппозиции в равной степени предоставлены сами себе. В рамках
+                    спецификации
+                    современных стандартов, стремящиеся вытеснить традиционное производство, нанотехнологии указаны как
+                    претенденты на роль ключевых факторов.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="newsBox">
+                <div class="newsInfo">
+                  <span  class="newsDate">15 Апр 2022</span>
+                  <div class="comment">
+                    <img src="./img/eye.svg" alt="icon message" id="eyeIcon">
+                    <span  class="newsDate">242</span>
+                  </div>
+                  <div class="comment">
+                    <img src="./img/comment.svg" alt="icon message" id="messageIcon">
+                    <span  class="newsDate">14</span>
+                  </div>
+                </div>
+                <img src="./img/new2.png" alt="men">
+                <div class="newsText">
+                  <p class="dateText">Не время умирать. Перенос релиза фильма </p>
+                  <p class="dateText2">Но действия представителей оппозиции в равной степени предоставлены сами себе. В рамках
+                    спецификации
+                    современных стандартов, стремящиеся вытеснить традиционное производство, нанотехнологии указаны как
+                    претенденты на роль ключевых факторов.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="newsBox">
+                <div class="newsInfo">
+                  <span  class="newsDate">15 Апр 2020</span>
+                  <div class="comment">
+                    <img src="./img/eye.svg" alt="icon message" id="eyeIcon">
+                    <span  class="newsDate">242</span>
+                  </div>
+                  <div class="comment">
+                    <img src="./img/comment.svg" alt="icon message" id="messageIcon">
+                    <span  class="newsDate">14</span>
+                  </div>
+                </div>
+                <img src="./img/new3.png" alt="men">
+                <div class="newsText">
+                  <p class="dateText">Не время умирать. Перенос релиза фильма </p>
+                  <p class="dateText2">Но действия представителей оппозиции в равной степени предоставлены сами себе. В рамках
+                    спецификации
+                    современных стандартов, стремящиеся вытеснить традиционное производство, нанотехнологии указаны как
+                    претенденты на роль ключевых факторов.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="newsBox">
+                <div class="newsInfo">
+                  <span  class="newsDate">15 Апр 2020</span>
+                  <div class="comment">
+                    <img src="./img/eye.svg" alt="icon message" id="eyeIcon">
+                    <span  class="newsDate">242</span>
+                  </div>
+                  <div class="comment">
+                    <img src="./img/comment.svg" alt="icon message" id="messageIcon">
+                    <span  class="newsDate">14</span>
+                  </div>
+                </div>
+                <img src="./img/new4.png" alt="men">
+                <div class="newsText">
+                  <p class="dateText">Не время умирать. Перенос релиза фильма </p>
+                  <p class="dateText">Но действия представителей оппозиции в равной степени предоставлены сами себе. В рамках
+                    спецификации
+                    современных стандартов, стремящиеся вытеснить традиционное производство, нанотехнологии указаны как
+                    претенденты на роль ключевых факторов.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="newsBoxColumn">
+
+          <div thumbsSlider="" class="swiper4">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="newsInfoCard">
+                  <div class="newsInfo2">
+                    <span  class="newsDate"> 15 Апр 2020</span>
+                  </div>
+                  <img src="./img/new1.png" alt="carton">
+                  <div class="newsText2">
+                    <span  class="newsDate">Как изменили Соника с </span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="newsInfoCard">
+                  <div class="newsInfo2">
+                    <span  class="newsDate"> 15 Апр 2020</span>
+                  </div>
+                  <img src="./img/new2.png" alt="carton">
+                  <div class="newsText2">
+                    <span  class="newsDate">Как изменили Соника с </span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="newsInfoCard">
+                  <div class="newsInfo2">
+                    <span  class="newsDate"> 15 Апр 2020</span>
+                  </div>
+                  <img src="./img/new3.png" alt="carton">
+                  <div class="newsText2">
+                    <span  class="newsDate">Как изменили Соника с </span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="newsInfoCard">
+                  <div class="newsInfo2">
+                    <span  class="newsDate"> 15 Апр 2020</span>
+                  </div>
+                  <img src="./img/new4.png" alt="carton">
+                  <div class="newsText2">
+                    <span  class="newsDate">Как изменили Соника с </span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="expectedNews">
+    <div class="trailerTitle container">
+      <h2>Новые трейлеры</h2>
+
+      <div class="trailerText">
+        <span>Все трейлеры</span>
+        <span>==></span>
+      </div>
+    </div>
+
+    <div class="showcase container">
+      <div class="filmContainer2">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="filmCard">
+                <div class="filmCardImg">
+                  <img src="./img/pop1.png" alt="">
+                  <div class="reyting">8.50</div>
+                </div>
+                <div class="filmCardText">
+                  <p>Джокер</p>
+                  <span>Триллер, драма, криминал</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="filmCard">
+                <div class="filmCardImg">
+                  <img src="./img/img2.png" alt="">
+                  <div class="reyting">8.50</div>
+                </div>
+                <div class="filmCardText">
+                  <p>Джокер</p>
+                  <span>Триллер, драма, криминал</span>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="swiper-slide">
+              <div class="filmCard">
+                <div class="filmCardImg">
+                  <img src="./img/img2.png" alt="">
+                  <div class="reyting">8.50</div>
+                </div>
+                <div class="filmCardText">
+                  <p>Джокер</p>
+                  <span>Триллер, драма, криминал</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="filmCard">
+                <div class="filmCardImg">
+                  <img src="./img/img2.png" alt="">
+                  <div class="reyting">8.50</div>
+                </div>
+                <div class="filmCardText">
+                  <p>Джокер</p>
+                  <span>Триллер, драма, криминал</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="filmCard">
+                <div class="filmCardImg">
+                  <img src="./img/img3.png" alt="">
+                  <div class="reyting">8.50</div>
+                </div>
+                <div class="filmCardText">
+                  <p>Джокер</p>
+                  <span>Триллер, драма, криминал</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="filmCard">
+                <div class="filmCardImg">
+                  <img src="./img/img1.png" alt="">
+                  <div class="reyting">8.50</div>
+                </div>
+                <div class="filmCardText">
+                  <p>Джокер</p>
+                  <span>Триллер, драма, криминал</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="filmCard">
+                <div class="filmCardImg">
+                  <img src="./img/pop1.png" alt="">
+                  <div class="reyting">8.50</div>
+                </div>
+                <div class="filmCardText">
+                  <p>Джокер</p>
+                  <span>Триллер, драма, криминал</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+          <!-- If we need pagination
+          <div class="swiper-pagination"></div> -->
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="boxOfficeContainer">
+    <div class="boxOfficeBox container">
+      <div class="header">
+        <div class="headerTitle">
+          <h2>Кассовые сборы</h2>
+
+          <span>13 марта — 15 марта</span>
+        </div>
+
+        <div class="line"></div>
+
+        <ul>
+          <li><a href="#">Россия </a></li>
+          <li><a href="#">Весь мир</a></li>
+          <li><a href="#">США и Канада</a></li>
+        </ul>
+
+      </div>
+
+      <div class="boxOfficeCards">
+        <div class="officeCard">
+          <img src="./img/small.png" alt="film">
+          <div class="officeText">
+            <p class="whiteText3">1. Бладшот</p>
+            <span class="yellowText3">$13 млн</span>
+            <span class="grayText3">$15.1 млн за 4 недели</span>
+          </div>
+        </div>
+
+        <div class="officeCard">
+          <img src="./img/small2.png" alt="film">
+          <div class="officeText">
+            <p class="whiteText3">2. Вперёд</p>
+            <span class="yellowText3">$6.8 млн</span>
+            <span class="grayText3">$41.4 млн за 4 недели</span>
+          </div>
+        </div>
+
+        <div class="officeCard">
+          <img src="./img/small3.png" alt="film">
+          <div class="officeText">
+            <p class="whiteText3">3. Человек
+              -невидимка</p>
+            <span class="yellowText3">$6.2 млн</span>
+            <span class="grayText3">$58.3 млн за 3 недели</span>
+          </div>
+        </div>
+
+        <div class="officeCard">
+          <img src="./img/small4.png" alt="film">
+          <div class="officeText">
+            <p class="whiteText3">4. Соник в кино</p>
+            <span class="yellowText3">$2.9 млн</span>
+            <span class="grayText3">$15.1 млн за 4 недели</span>
+          </div>
+        </div>
+
+        <div class="officeCard">
+          <img src="./img/small5.png" alt="film">
+          <div class="officeText">
+            <p class="whiteText3">5. Джентльмены</p>
+            <span class="yellowText3">$1.8 млн</span>
+            <span class="grayText3">$78.7 млн за 11 недель</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="subscriptionContainer">
+    <div class="subscriptionBox container">
+      <img src="./img/logofooter.png" alt="logo">
+      <h4>Подпишитесь на E-mail рассылку</h4>
+      <p class="subText">Если хотиет быть в курсе последних новостей и новинок кино - заполните форму ниже и оформите
+        бесплатную E-mail
+        рассылку! </p>
+
+      <form action="">
+        <input type="text" placeholder="Введите свой E-mail адрес">
+        <button class="subBtn">Подписаться</button>
+      </form>
+
+      <div class="subLabel">
+        <input type="checkbox">
+        <label for="#">
+          Соглашаюсь на условия <a href="#" class="suba">политики конфиденциальности</a>
+        </label>
+      </div>
+     
+    </div>
+  </section>
+
+  <footer>
+    <div class="footerContainer container">
+      <div class="footerIcons">
+        <img src="./img/twitter.png">
+        <img src="./img/twitter.png">
+        <img src="./img/twitter.png">
+        <img src="./img/twitter.png">
+        <img src="./img/twitter.png">
+      </div>
+
+      <ul class="menu">
+        <li><a href="#">Афиша</a></li>
+        <li><a href="#">Медиа</a></li>
+        <li><a href="#">Фильмы</a></li>
+        <li><a href="#">Актёры</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Подборки</a></li>
+        <li><a href="#">Категории</a></li>
+      </ul>
+
+      <p>2020 © Kinoarea. Все права защищены</p>
+
+      <a href="#">Политика конфиденциальности</a>
+    </div>
+
+  </footer>
+
+
+
   <script src="./main.js"></script>
+  <script src="./swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+
+      //responsive
+      breakpoints: {
+        // when window width is >= 320px
+        380: {
+          slidesPerView: 2,
+          spaceBetween: 10
+        },
+
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 25
+        },
+        900: {
+          slidesPerView: 4,
+          spaceBetween: 30
+        }, 1200: {
+          slidesPerView: 5,
+          spaceBetween: 40
+        }
+
+      },
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+
+
+    const swiper2 = new Swiper('.swiper2', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: false,
+
+      //responsive
+      breakpoints: {
+        // when window width is >= 320px
+        380: {
+          slidesPerView: 2,
+          spaceBetween: 10
+        },
+        640: {
+          slidesPerView: 4,
+          spaceBetween: 25
+        },
+
+      }
+    });
+
+    let swiper4 = new Swiper(".swiper4", {
+      spaceBetween: 10,
+      slidesPerView: 1,
+      direction: "horizontal",
+
+      breakpoints: {
+        // when window width is >= 320px
+
+        400: {
+          slidesPerView: 2,
+          spaceBetween: 10
+        },
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 15
+        },
+        900: {
+          slidesPerView: 4,
+          spaceBetween: 10
+        },
+
+        1180: {
+          slidesPerView: 4,
+          spaceBetween: 10,
+          direction: "vertical",
+        }
+
+      }
+
+    });
+    let swiper3 = new Swiper(".swiper3", {
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper4,
+      },
+    });
+
+  </script>
+
 </body>
 
 </html>

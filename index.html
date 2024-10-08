@@ -12,6 +12,18 @@
 </head>
 
 <body>
+  <div id="menu">
+    <ul>
+      <li><a href="#">Афиша</a></li>
+      <li><a href="#">Медиа</a></li>
+      <li><a href="#">Фильмы</a></li>
+      <li><a href="#">Актёры</a></li>
+      <li><a href="#">Новости</a></li>
+      <li><a href="#">Подборки</a></li>
+      <li><a href="#">Категории</a></li>
+    </ul>
+  </div>
+
   <section class="firstContainer">
     <nav class="container navbar">
       <div class="logo">
@@ -34,11 +46,17 @@
         <li><a href="#">Категории</a></li>
       </ul>
 
-      <button class="search">
-        <img src="./img/Vector.png" alt="search">
-      </button>
+      <div class="actions-container">
+        <div id="burger-menu">
+          <span></span>
+        </div>
 
-      <button class="navbtn">Войти</button>
+        <button class="search">
+          <img src="./img/Vector.png" alt="search">
+        </button>
+      </div>
+
+      <button class="navbtn" id="login">Войти</button>
     </nav>
 
     <div class="header container">
@@ -203,7 +221,7 @@
 
       <div class="trailerText">
         <span>Все трейлеры</span>
-        <span>==></span>
+        <img src="./img/arrow-right.svg" alt="icon" id="eyeIcon">
       </div>
     </div>
 
@@ -293,13 +311,13 @@
       <div class="line"></div>
 
       <ul>
-        <li><a href="#">Все</a></li>
-        <li><a href="#">2020</a></li>
-        <li><a href="#">2019</a></li>
-        <li><a href="#">2018</a></li>
-        <li><a href="#">2017</a></li>
-        <li><a href="#">2016</a></li>
-        <li><a href="#">2015</a></li>
+        <li><a onclick="filterYear()">Все</a></li>
+        <li><a onclick="filterYear()">2020</a></li>
+        <li><a onclick="filterYear()">2019</a></li>
+        <li><a onclick="filterYear()">2018</a></li>
+        <li><a onclick="filterYear()">2017</a></li>
+        <li><a onclick="filterYear()">2016</a></li>
+        <li><a onclick="filterYear()">2015</a></li>
       </ul>
     </div>
 
@@ -310,7 +328,7 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-year="2020">
               <div class="filmCard">
                 <div class="filmCardImg">
                   <img src="./img/pop1.png" alt="">
@@ -323,7 +341,7 @@
               </div>
             </div>
 
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-year="2019">
               <div class="filmCard">
                 <div class="filmCardImg">
                   <img src="./img/img2.png" alt="">
@@ -337,7 +355,7 @@
             </div>
 
 
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-year="2018">
               <div class="filmCard">
                 <div class="filmCardImg">
                   <img src="./img/img2.png" alt="">
@@ -350,7 +368,7 @@
               </div>
             </div>
 
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-year="2017">
               <div class="filmCard">
                 <div class="filmCardImg">
                   <img src="./img/img2.png" alt="">
@@ -363,7 +381,7 @@
               </div>
             </div>
 
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-year="2016">
               <div class="filmCard">
                 <div class="filmCardImg">
                   <img src="./img/img3.png" alt="">
@@ -376,7 +394,7 @@
               </div>
             </div>
 
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-year="2015">
               <div class="filmCard">
                 <div class="filmCardImg">
                   <img src="./img/img1.png" alt="">
@@ -389,7 +407,7 @@
               </div>
             </div>
 
-            <div class="swiper-slide">
+            <div class="swiper-slide" data-year="2019">
               <div class="filmCard">
                 <div class="filmCardImg">
                   <img src="./img/pop1.png" alt="">
@@ -406,15 +424,24 @@
 
 
 
-          <!-- If we need pagination
-          <div class="swiper-pagination"></div> -->
+          <!-- If we need pagination -->
+          <!-- <div class="swiper-pagination"></div> -->
 
           <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <!-- <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> -->
+          <!-- <div class="filmContainer2-pagination"></div> -->
 
-          <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
+        </div>
+
+        <div class="filmContainer2-controllers">
+          <div class="filmContainer2-button-prev">
+            <img src="./img/arrow-left.svg" alt="icon" id="eyeIcon">
+          </div>
+          <div class="filmContainer2-pagination"> 1 / 7</div>
+          <div class="filmContainer2-button-next">
+            <img src="./img/arrow-right.svg" alt="icon" id="eyeIcon">
+          </div>
         </div>
 
 
@@ -549,7 +576,7 @@
         <h2>Последние новости</h2>
         <div class="trailerText">
           <span>Все новости</span>
-          <span>==></span>
+          <img src="./img/arrow-right.svg" alt="icon" id="eyeIcon">
         </div>
       </div>
 
@@ -563,17 +590,18 @@
                   <span class="newsDate">15 Апр 2020</span>
                   <div class="comment">
                     <img src="./img/eye.svg" alt="icon message" id="eyeIcon">
-                    <span  class="newsDate">242</span>
+                    <span class="newsDate">242</span>
                   </div>
                   <div class="comment">
                     <img src="./img/comment.svg" alt="icon message" id="messageIcon">
-                    <span  class="newsDate">14</span>
+                    <span class="newsDate">14</span>
                   </div>
                 </div>
                 <img src="./img/new1.png" alt="men">
                 <div class="newsText">
                   <p class="dateText">Не время умирать. Перенос релиза фильма </p>
-                  <p class="dateText2">Но действия представителей оппозиции в равной степени предоставлены сами себе. В рамках
+                  <p class="dateText2">Но действия представителей оппозиции в равной степени предоставлены сами себе. В
+                    рамках
                     спецификации
                     современных стандартов, стремящиеся вытеснить традиционное производство, нанотехнологии указаны как
                     претенденты на роль ключевых факторов.</p>
@@ -583,20 +611,21 @@
             <div class="swiper-slide">
               <div class="newsBox">
                 <div class="newsInfo">
-                  <span  class="newsDate">15 Апр 2022</span>
+                  <span class="newsDate">15 Апр 2022</span>
                   <div class="comment">
                     <img src="./img/eye.svg" alt="icon message" id="eyeIcon">
-                    <span  class="newsDate">242</span>
+                    <span class="newsDate">242</span>
                   </div>
                   <div class="comment">
                     <img src="./img/comment.svg" alt="icon message" id="messageIcon">
-                    <span  class="newsDate">14</span>
+                    <span class="newsDate">14</span>
                   </div>
                 </div>
                 <img src="./img/new2.png" alt="men">
                 <div class="newsText">
                   <p class="dateText">Не время умирать. Перенос релиза фильма </p>
-                  <p class="dateText2">Но действия представителей оппозиции в равной степени предоставлены сами себе. В рамках
+                  <p class="dateText2">Но действия представителей оппозиции в равной степени предоставлены сами себе. В
+                    рамках
                     спецификации
                     современных стандартов, стремящиеся вытеснить традиционное производство, нанотехнологии указаны как
                     претенденты на роль ключевых факторов.</p>
@@ -606,20 +635,21 @@
             <div class="swiper-slide">
               <div class="newsBox">
                 <div class="newsInfo">
-                  <span  class="newsDate">15 Апр 2020</span>
+                  <span class="newsDate">15 Апр 2020</span>
                   <div class="comment">
                     <img src="./img/eye.svg" alt="icon message" id="eyeIcon">
-                    <span  class="newsDate">242</span>
+                    <span class="newsDate">242</span>
                   </div>
                   <div class="comment">
                     <img src="./img/comment.svg" alt="icon message" id="messageIcon">
-                    <span  class="newsDate">14</span>
+                    <span class="newsDate">14</span>
                   </div>
                 </div>
                 <img src="./img/new3.png" alt="men">
                 <div class="newsText">
                   <p class="dateText">Не время умирать. Перенос релиза фильма </p>
-                  <p class="dateText2">Но действия представителей оппозиции в равной степени предоставлены сами себе. В рамках
+                  <p class="dateText2">Но действия представителей оппозиции в равной степени предоставлены сами себе. В
+                    рамках
                     спецификации
                     современных стандартов, стремящиеся вытеснить традиционное производство, нанотехнологии указаны как
                     претенденты на роль ключевых факторов.</p>
@@ -629,20 +659,21 @@
             <div class="swiper-slide">
               <div class="newsBox">
                 <div class="newsInfo">
-                  <span  class="newsDate">15 Апр 2020</span>
+                  <span class="newsDate">15 Апр 2020</span>
                   <div class="comment">
                     <img src="./img/eye.svg" alt="icon message" id="eyeIcon">
-                    <span  class="newsDate">242</span>
+                    <span class="newsDate">242</span>
                   </div>
                   <div class="comment">
                     <img src="./img/comment.svg" alt="icon message" id="messageIcon">
-                    <span  class="newsDate">14</span>
+                    <span class="newsDate">14</span>
                   </div>
                 </div>
                 <img src="./img/new4.png" alt="men">
                 <div class="newsText">
                   <p class="dateText">Не время умирать. Перенос релиза фильма </p>
-                  <p class="dateText">Но действия представителей оппозиции в равной степени предоставлены сами себе. В рамках
+                  <p class="dateText">Но действия представителей оппозиции в равной степени предоставлены сами себе. В
+                    рамках
                     спецификации
                     современных стандартов, стремящиеся вытеснить традиционное производство, нанотехнологии указаны как
                     претенденты на роль ключевых факторов.</p>
@@ -660,44 +691,44 @@
               <div class="swiper-slide">
                 <div class="newsInfoCard">
                   <div class="newsInfo2">
-                    <span  class="newsDate"> 15 Апр 2020</span>
+                    <span class="newsDate"> 15 Апр 2020</span>
                   </div>
                   <img src="./img/new1.png" alt="carton">
                   <div class="newsText2">
-                    <span  class="newsDate">Как изменили Соника с </span>
+                    <span class="newsDate">Как изменили Соника с </span>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="newsInfoCard">
                   <div class="newsInfo2">
-                    <span  class="newsDate"> 15 Апр 2020</span>
+                    <span class="newsDate"> 15 Апр 2020</span>
                   </div>
                   <img src="./img/new2.png" alt="carton">
                   <div class="newsText2">
-                    <span  class="newsDate">Как изменили Соника с </span>
+                    <span class="newsDate">Как изменили Соника с </span>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="newsInfoCard">
                   <div class="newsInfo2">
-                    <span  class="newsDate"> 15 Апр 2020</span>
+                    <span class="newsDate"> 15 Апр 2020</span>
                   </div>
                   <img src="./img/new3.png" alt="carton">
                   <div class="newsText2">
-                    <span  class="newsDate">Как изменили Соника с </span>
+                    <span class="newsDate">Как изменили Соника с </span>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="newsInfoCard">
                   <div class="newsInfo2">
-                    <span  class="newsDate"> 15 Апр 2020</span>
+                    <span class="newsDate"> 15 Апр 2020</span>
                   </div>
                   <img src="./img/new4.png" alt="carton">
                   <div class="newsText2">
-                    <span  class="newsDate">Как изменили Соника с </span>
+                    <span class="newsDate">Как изменили Соника с </span>
                   </div>
                 </div>
               </div>
@@ -713,11 +744,18 @@
 
   <section class="expectedNews">
     <div class="trailerTitle container">
-      <h2>Новые трейлеры</h2>
+      <h2>Ожидаемые новинки</h2>
 
       <div class="trailerText">
-        <span>Все трейлеры</span>
-        <span>==></span>
+        <div class="filmContainer2-controllers">
+          <div class="filmContainer2-button-prev">
+            <img src="./img/arrow-left.svg" alt="icon" id="eyeIcon">
+          </div>
+          <div class="filmContainer2-pagination"> 1 / 7</div>
+          <div class="filmContainer2-button-next">
+            <img src="./img/arrow-right.svg" alt="icon" id="eyeIcon">
+          </div>
+        </div>
       </div>
     </div>
 
@@ -927,7 +965,7 @@
           Соглашаюсь на условия <a href="#" class="suba">политики конфиденциальности</a>
         </label>
       </div>
-     
+
     </div>
   </section>
 
@@ -959,6 +997,75 @@
   </footer>
 
 
+  <div class="enterContainer">
+    <div class="enterBox">
+
+      <div class="closeBox">
+        <button class="close">X</button>
+      </div>
+
+      <h5>Войти</h5>
+      <form action="" class="enterForm">
+        <input type="text" placeholder="Логин, почта или телефон">
+        <input type="text" placeholder="Ваш пароль">
+        <button class="yellowBtn">Войти</button>
+        <button class="whiteBtn" id="register">Зарегистрироваться</button>
+      </form>
+      <a href="#" class="code">Восстановить пароль</a>
+
+      <div class="iconBoxes">
+        <div class="iconCard">
+          <a href="#"><img src="./img/twitter.png"></a>
+        </div>
+
+        <div class="iconCard">
+          <a href="#"><img src="./img/twitter.png"></a>
+        </div>
+
+        <div class="iconCard">
+          <a href="#"><img src="./img/twitter.png"></a>
+        </div>
+
+        <div class="iconCard">
+          <a href="#"><img src="./img/twitter.png"></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <section class="registrationContainer">
+    <div class="registrationBox">
+
+      <div class="closeBox">
+        <button class="close">X</button>
+      </div>
+      <h5>Зарегистрироваться</h5>
+      <form action="" class="enterForm">
+        <input type="text" placeholder="Имя">
+        <input type="text" placeholder="Фамилия">
+        <input type="text" placeholder="Придумайте логин">
+        <input type="text" placeholder="Повторите пароль">
+        <input type="text" placeholder="Повторите пароль">
+        <input type="text" placeholder="Номер телефона или e-mail">
+      </form>
+
+      <div class="checkBoxes">
+        <div class="checkboxCard">
+          <input type="checkbox" class="checkbox">
+          <label for="">Соглашаюсь на условия <a href="#" id="checkboxYellow">политики конфиденциальности</a></label>
+        </div>
+
+        <div class="checkboxCard">
+          <input type="checkbox" class="checkbox">
+          <label for="">Соглашаюсь на обработку персональных данных</label>
+        </div>
+      </div>
+      <button class="yellow">Зарегистрироваться</button>
+    </div>
+
+  </section>
+
 
   <script src="./main.js"></script>
   <script src="./swiper/swiper-bundle.min.js"></script>
@@ -967,6 +1074,14 @@
       // Optional parameters
       direction: 'horizontal',
       loop: true,
+      navigation: {
+        nextEl: ".filmContainer2-button-next",
+        prevEl: ".filmContainer2-button-prev",
+      },
+      pagination: {
+        el: ".filmContainer2-pagination",
+        type: "fraction",
+      },
 
       //responsive
       breakpoints: {
